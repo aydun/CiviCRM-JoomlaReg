@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="user" method="upgrade">
+	<name>plg_user_regcivi</name>
+	<author>Aidan Saunders</author>
+	<creationDate>April 2018</creationDate>
+	<copyright>(C) 2018 Squiffle Consulting Ltd. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<authorEmail>aidan.saunders@squiffle.uk</authorEmail>
+	<version>1.0.0</version>
+	<description>PLG_USER_REGCIVI_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="regcivi">regcivi.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+</extension>
