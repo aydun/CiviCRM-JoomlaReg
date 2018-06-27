@@ -13,4 +13,14 @@
 		<filename>index.html</filename>
 		<folder>language</folder>
 	</files>
+    <config>
+      <fields name="params">
+        <fieldset name="basic">
+          <field name="extracondition" type="text"
+            label="PLG_USER_REGCIVI_EXTRA_LABEL"
+            description="PLG_USER_REGCIVI_EXTRA_DESC"
+          />
+        </fieldset>
+      </fields>
+    </config>
 </extension>

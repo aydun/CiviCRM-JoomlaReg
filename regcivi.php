@@ -53,6 +53,17 @@ class plgUserRegCivi extends JPlugin {
       'is_deceased' => 0,
       'contact_type' => 'Individual',
     );
+
+    // Pull in extra conditions if they were specified on the
+    // plugin configuration page.
+    $extra = $this->params->get('extracondition');
+    if ($extra) {
+      $extra_params = json_decode($extra, TRUE);
+      if ($extra_params) {
+        $params += $extra_params;
+      }
+    }
+
     $contact = civicrm_api3('Contact', 'get', $params);
     return ($contact['count'] == 1);
   }
