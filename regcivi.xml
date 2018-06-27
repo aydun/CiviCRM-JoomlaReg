@@ -15,10 +15,11 @@
 	</files>
     <config>
       <fields name="params">
-        <fieldset name="basic">
+        <fieldset name="basic" addrulepath="/plugins/user/regcivi/rules">
           <field name="extracondition" type="text"
             label="PLG_USER_REGCIVI_EXTRA_LABEL"
             description="PLG_USER_REGCIVI_EXTRA_DESC"
+            validate="json"
           />
         </fieldset>
       </fields>
